@@ -8,7 +8,7 @@ int main(int argc, char const *argv[])
 	
 	List tree;
 
-	tree.read();
+	tree.read(); // read the tree from the file
 
     tree.rest();
 
