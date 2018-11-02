@@ -1,6 +1,9 @@
 # Prerequisites
 *.d
-
+dmain
+main
+*.sublime-project
+*.sublime-workspace
 # Compiled Object files
 *.slo
 *.lo
