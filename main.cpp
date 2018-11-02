@@ -11,7 +11,7 @@ int main(int argc, char const *argv[])
 	tree.read(); // read the tree from the file
 
     tree.rest();
-
+ 
     tree.path('A','S');
 
     cout << endl;
