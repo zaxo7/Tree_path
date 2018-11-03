@@ -12,22 +12,22 @@ void path(int depart)
 	switch(depart)
 	{
 		case A:
-		std::cout << "A >" ;
+		std::cout << "A > " ;
 		break;
 		case B:
-		std::cout << "B >" ;
+		std::cout << "B > " ;
 		break;
 		case C:
-		std::cout << "C >" ;
+		std::cout << "C > " ;
 		break;
 		case D:
-		std::cout << "D >" ;
+		std::cout << "D > " ;
 		break;
 		case E:
-		std::cout << "E >" ;
+		std::cout << "E > " ;
 		break;
-		case I:
-		std::cout << "I >" ;
+		case F:
+		std::cout << "F > " ;
 		break;
 	}
 	for(int i = 0; i < N; i++)
@@ -51,8 +51,8 @@ void path(int depart)
 				case E:
 				std::cout << "E" ;
 				break;
-				case I:
-				std::cout << "I" ;
+				case F:
+				std::cout << "F" ;
 				break;
 			}
 			b++;

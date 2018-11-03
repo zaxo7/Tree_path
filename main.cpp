@@ -18,7 +18,22 @@ bool rel[N][N] = {
 int main(int argc, char const *argv[])
 {
 
-	path(A);
+	int depart;
+
+
+	char tmp;
+
+	cout << "Donner la ville de depart :";
+    cin >> tmp;
+    depart=tmp - 65;
+
+    cout << "Donner la ville de d'arrive :";
+	cin >> tmp;
+	arrive=tmp - 65;
+
+	path(depart);
+	if(!b)
+		cout << "no way ;D" << endl;
 
 
 

@@ -3,7 +3,7 @@
 #include <iostream>
 #define N 6
 
-enum Villes { A, B, C, D, E, I};
+enum Villes { A, B, C, D, E, F};
 
 void path(int depart);
 
