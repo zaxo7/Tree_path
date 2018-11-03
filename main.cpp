@@ -12,7 +12,14 @@ int main(int argc, char const *argv[])
 
     tree.rest();
 
-    tree.path('A','S');
+    char arrive,depart;
+
+    cout << "Donner la ville de départ :";
+    cin >> depart;
+    cout << "Donner la ville de d'arrivé :";
+    cin >> arrive;
+
+    tree.path(depart,arrive);
 
     cout << endl;
     while(1);

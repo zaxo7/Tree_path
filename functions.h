@@ -23,7 +23,6 @@ public:
 	List();
 	List(char first_member_value);
 
-	void create_list(char first_member = 'A');
 	bool push_after(char new_member = 'N', int branch = 0); // add after the current member // the branch is the direction (which branch)
 	bool push_curr(char new_member = 'N'); // add the current member 
 	bool step_back(int branch = 0); // récule avec un pas

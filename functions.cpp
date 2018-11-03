@@ -6,15 +6,21 @@ list* spot_found = NULL;
 
 List::List()
 {
-	create_list();
+	first_member = new list;
+
+
+	first_member->next[0] == NULL;
+	first_member->prev[0] == NULL;
+	first_member->branch_count == 0;
+	first_member->generation == 0;
+
+	element_count = 1;
+
+
+		
+	current_member = first_member;
 }
 List::List(char first_member_value)
-{
-	create_list(first_member_value);
-	element_count = 0;
-}
-
-void List::create_list(char first_member_value)
 {
 	first_member = new list;
 
@@ -31,6 +37,7 @@ void List::create_list(char first_member_value)
 		
 	current_member = first_member;
 }
+
 
 bool List::push_after(char new_member, int branch) 
 {
