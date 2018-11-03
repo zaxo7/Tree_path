@@ -14,9 +14,9 @@ int main(int argc, char const *argv[])
 
     char arrive,depart;
 
-    cout << "Donner la ville de départ :";
+    cout << "Donner la ville de depart :";
     cin >> depart;
-    cout << "Donner la ville de d'arrivé :";
+    cout << "Donner la ville de d'arrive :";
     cin >> arrive;
 
     tree.path(depart,arrive);
