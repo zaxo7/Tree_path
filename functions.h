@@ -22,6 +22,7 @@ class List
 public:
 	List();
 	List(char first_member_value);
+	~List();
 
 	bool push_after(char new_member = 'N', int branch = 0); // add after the current member // the branch is the direction (which branch)
 	bool push_curr(char new_member = 'N'); // add the current member 

@@ -22,6 +22,8 @@ int main(int argc, char const *argv[])
     tree.path(depart,arrive);
 
     cout << endl;
+
+    //free(tree);
     while(1);
 
 	/*int br;

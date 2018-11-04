@@ -38,6 +38,14 @@ List::List(char first_member_value)
 	current_member = first_member;
 }
 
+List::~List()
+{
+	rest();
+	for(int i = 0; i < 5; i++)
+	{
+		
+	}
+}
 
 bool List::push_after(char new_member, int branch) 
 {
