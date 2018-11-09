@@ -1,6 +1,8 @@
 #include "functions.h"
 
 list* spot_found = NULL;
+list* spot_check = NULL;
+
 
 //////////// Liste chainée
 
@@ -192,6 +194,14 @@ bool List::read(std::string const path)
 
 void List::path(char start_point, char arrival)
 {
+	bool s = false;
+	if(start_point > arrival)
+	{
+		char t = start_point;
+		start_point = arrival;
+		arrival = t;
+		s = true;
+	}
 	//find the start spot 
 	search(start_point,first_member,0);
 	if(spot_found == NULL)
@@ -199,6 +209,7 @@ void List::path(char start_point, char arrival)
 		std::cout << "start point not found" << std::endl;
 		return ;
 	}
+	spot_check = spot_found;
 	spot_found = NULL;
 	//find the arrival spot with
 	search(arrival,first_member,0);
@@ -219,8 +230,9 @@ void List::path(char start_point, char arrival)
 	}
 	path[i] = spot_found->member;
 	path[i+1] = '\0';
-
-	permut(path,i); //reverse the table of path
+	//if the start and arrival not switched
+	if(!s)
+		permut(path,i); //reverse the table of path
 
 	//print the table of path
 
