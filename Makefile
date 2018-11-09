@@ -10,7 +10,7 @@ endif
 
 
 all:
-	@echo start compling
+	@echo start compiling
 	@$(ARG)
 	@$(ARG1)
 	@$(ARG2)
